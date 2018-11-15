@@ -1,0 +1,28 @@
+There are three types of loops:
+---FOR
+      *************************************************************
+      for ( variable initialization; condition; variable update ) {
+            Code to execute while the condition is true
+      }
+      **************************************************************     
+   initialization:declare a new variable or assign a new value to a the existing variable.
+   condition:tells the program that while the condition expression is true, the loop should continue to repeat itself
+   variable update: the easieast way for a for loop to handle the changing of the variable
+   ##IMPORTANT for the SEMICOLON between each element;
+   
+---WHILE 
+     ****************************************************************
+     while ( condition ) { Code to execute while the condition is true } 
+     *****************************************************************
+     when it reaches the brace at the end, it jumps back to the begining of the loop(checking the condition again 
+     nd decide whether to repeat the block another time/ stop and move to the next statement)
+
+---DO..WHILE 
+*********************************************************************
+do {
+} while ( condition );
+*********************************************************************
+not really different from the WHILE loop,but actually it is really useful that it gurantee that the block will be executed 
+at least one time
+##One brief discription for the DO-WHILE loop is :"Execute this block of code and loop while the condition is true"
+      
