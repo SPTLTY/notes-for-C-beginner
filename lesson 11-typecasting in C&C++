@@ -1,0 +1,38 @@
+1.C-style
+cout<< (char)65 <<"\n"; 
+  // The (char) is a typecast, telling the computer to interpret the 65 as a
+  //  character, not as a number.  It is going to give the character output of 
+  //  the equivalent of the number 65 (It should be the letter A for ASCII).
+  
+  USAGE FOR TYPECASTING
+  One use for typecasting for is when you want to use the ASCII characters. For example, what if you want to create your own chart of all 128 ASCII characters. 
+  To do this, you will need to use to typecast to allow you to print out the integer as its character equivalent.
+  
+  2. C++ style
+2.1 the first type
+int main()       
+{
+  cout<< char ( 65 ) <<"\n"; 
+  cin.get();
+}
+
+2.2 the second type
+int main()       
+{
+  cout<< static_cast<char> ( 65 ) <<"\n"; 
+  cin.get();
+}
+
+##USAGE FOR TYPECASTING
+ It's often reasonable to store two values in integers. For instance, if you were tracking heart patients, you might have a function to compute their age in years and the number of heart times they'd come in for heart pain. One operation you might conceivably want to perform is to compute the number of times per year of life someone has come in to see their physician about heart pain. What would this look like?
+/* magical function returns the age in years */
+int age = getAge();  
+/* magical function returns the number of visits */
+int pain_visits = getVisits(); 
+
+float visits_per_year = pain_visits / age;
+The problem is that when this program is run, visits_per_year will be zero unless the patient had an awful lot of visits to the doc. The way to get around this problem is to cast one of the values being divided so it gets treated as a floating point number, which will cause the compiler to treat the expression as if it were to result in a floating point number:
+float visits_per_year = pain_visits / static_cast<float>(age);
+/* or */
+float visits_per_year = static_cast<float>(pain_visits) / age;
+This would cause the correct values to be stored in visits_per_year. Can you think of another solution to this problem 
