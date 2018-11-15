@@ -1,0 +1,38 @@
+1.1   CONDITION
+  if(condition)
+   a true statment valuates to one;
+   a false statment valuates to zero;
+1.2 ELSE
+   a else statment ---execute whatever code after it (if the if statement is FALSE) 
+
+an exampke has shown in this lesson:
+******************************************
+ if ( TRUE ) {
+  // Execute these statements if TRUE
+  }
+  else {
+  // Execute these statements if FALSE
+  }
+ ******************************************
+ 
+ 1.3 ELSE IF ---if else is diaplayed in multiple conditional statement ,"else if "will be replace fo rthe first "else"
+*******************************************
+if ( <condition> ) {
+  // Execute these statements if <condition> is TRUE
+}
+else if ( <another condition> ) {
+  // Execute these statements if <another condition> is TRUE and
+  // <condition> is FALSE
+}
+********************************************
+
+2. BOOLEAN OPERATORS
+--OR ('|')
+    IF either (or both ) of the two values are  TURE then it returns TURE
+--AND ('&&')
+    IF both inputs are TURE(if "this "AND "that" are TURE)
+    **'AND' WILL BE EVALUATED BEFORE 'OR'
+--NOT  ('!')
+    IF the input is TRUE ,it returns FALSE;
+
+   
