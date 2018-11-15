@@ -1,0 +1,23 @@
+1.STRING COMPARISON FUNCTION
+*************************************
+int strcmp ( const char *s1, const char *s2 );
+*************************************
+return negative if s1 is less than s2
+return positive if s1 is greater than s2
+zero if s1 and s2 are equal;
+
+2.STRING CONCATENATE
+*******************************************
+char *strcat ( char *dest, const char *src );
+*******************************************
+add the seconf string to the first string
+
+3.STRING LENGTH
+********************************************
+size_t strlen ( const char *s );
+********************************************
+return the length of a string,minus the terminating character"\0"
+
+##
+"*buffer "IS A POINTER  to the first element of the character array----> so it can acess the array
+"&"
