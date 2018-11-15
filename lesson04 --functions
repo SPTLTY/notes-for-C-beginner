@@ -1,0 +1,27 @@
+To descirb the presentation for a function, I will use an example
+*******************************************************************
+#include <iostream>
+
+using namespace std;
+
+int mult ( int x, int y );
+
+int main()
+{
+  int x;
+  int y;
+  
+  cout<<"Please input two numbers to be multiplied: ";
+  cin>> x >> y;
+  cin.ignore();
+  cout<<"The product of your two numbers is "<< mult ( x, y ) <<"\n";
+  cin.get();
+}
+
+int mult ( int x, int y )
+{
+  return x * y;
+}
+********************************************************************
+the fuction call is used to difined the undefined function before main, Therefore the compiler will not give an error.
+(Remember to keep a blank function before main function
